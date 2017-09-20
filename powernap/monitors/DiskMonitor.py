@@ -35,6 +35,9 @@ class DiskMonitor ():
     def start(self):
         pass
 
+    def stop(self):
+        pass
+
     def active(self):
         if self.is_disk_active():
             return True

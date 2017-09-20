@@ -73,6 +73,9 @@ class IOMonitor ():
     def start(self):
         pass
 
+    def stop(self):
+        pass
+
     def active(self):
         if self.get_io_count():
             return True
