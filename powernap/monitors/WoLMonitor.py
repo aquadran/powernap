@@ -43,7 +43,7 @@ def get_local_wol_data(mac):
 # Obtain a list of available eth's, with its MAC address and WoL data.
 def get_eths_mac_wol_info():
     ifaces = []
-    prefix = re.compile("eth")
+    prefix = re.compile("^(en|eth)")
     dirs = os.listdir("/sys/class/net")
     for iface in dirs:
         if prefix.search(iface):
